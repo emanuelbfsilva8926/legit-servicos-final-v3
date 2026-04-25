@@ -6,11 +6,12 @@
     padding: var(--spacing-xl) 0;
     background: var(--gray-50);
     min-height: 100vh;
-    background-color: red;
+    
 }
 
 .perfil-layout {
     display: grid;
+    background-color: red;
     /*grid-template-columns: 1fr 400px; */
      grid-template-columns: 1fr minmax(0, 400px);
     gap: var(--spacing-xl);

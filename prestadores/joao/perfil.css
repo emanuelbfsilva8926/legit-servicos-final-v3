@@ -11,7 +11,7 @@
 
 .perfil-layout {
     display: grid;
-    background-color: red;
+    
     /*grid-template-columns: 1fr 400px; */
     grid-template-columns: 1fr minmax(0, 400px);
     gap: var(--spacing-xl);
@@ -24,8 +24,8 @@
    HEADER DO PRESTADOR
    ======================================== */
 .prestador-header {
-    background: var(--white);
     
+    background-color: red;
     padding: var(--spacing-xl);
     border-radius: var(--radius-xl);
     box-shadow: var(--shadow-md);

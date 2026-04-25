@@ -581,7 +581,7 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 450px) {
     .prestador-nome {
         font-size: 1.5rem;
     }

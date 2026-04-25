@@ -14,7 +14,7 @@
     grid-template-columns: 1fr minmax(0, 400px);
     gap: var(--spacing-xl);
     align-items: start;
-    background: red;
+    
     
 }
 
@@ -22,7 +22,8 @@
    HEADER DO PRESTADOR
    ======================================== */
 .prestador-header {
-    background: var(--white);
+    background: red;
+    
     padding: var(--spacing-xl);
     border-radius: var(--radius-xl);
     box-shadow: var(--shadow-md);

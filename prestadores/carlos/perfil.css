@@ -14,7 +14,7 @@
     grid-template-columns: 1fr minmax(0, 400px);
     gap: var(--spacing-xl);
     align-items: start;
-    border: 1 solid red;
+    
     
 }
 
@@ -598,3 +598,6 @@
     }
 }
 
+html, body {
+    overflow-x: hidden;
+}

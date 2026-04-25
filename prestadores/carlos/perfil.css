@@ -25,7 +25,7 @@
    HEADER DO PRESTADOR
    ======================================== */
 .prestador-header {
-    background-color: red;
+    background: var(--white);
     
     padding: var(--spacing-xl);
     border-radius: var(--radius-xl);

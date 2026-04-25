@@ -30,6 +30,7 @@
     gap: var(--spacing-lg);
     align-items: start;
     margin-bottom: var(--spacing-lg);
+    outline: 1px solid red;
      
 }
 
@@ -596,6 +597,3 @@
     }
 }
 
-html, body {
-    overflow-x: hidden;
-}

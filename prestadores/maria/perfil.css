@@ -12,6 +12,7 @@
     display: grid;
     /*grid-template-columns: 1fr 400px; */
      grid-template-columns: 1fr minmax(0, 400px);
+     background: red;
     gap: var(--spacing-xl);
     align-items: start;
     

@@ -1,0 +1,192 @@
+/* ========================================
+   PÁGINA DE LISTAGEM - ESTILOS
+   ======================================== */
+
+/* Link ativo no menu */
+.nav-menu .active {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* ========================================
+   SEÇÃO DE FILTROS
+   ======================================== */
+.filtros-section {
+    background: var(--gray-50);
+    padding: var(--spacing-xl) 0 var(--spacing-lg) 0;
+}
+
+.search-box-listagem {
+    background: var(--white);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-lg);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) auto;
+    gap: var(--spacing-md);
+    align-items: end;
+}
+
+/* ========================================
+   SEÇÃO DE LISTAGEM
+   ======================================== */
+.listagem-section {
+    background: var(--gray-50);
+    padding: var(--spacing-2xl) 0;
+    min-height: 100vh;
+}
+
+.listagem-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--gray-900);
+    margin-bottom: var(--spacing-sm);
+}
+
+.listagem-subtitle {
+    font-size: 1rem;
+    color: var(--gray-600);
+    line-height: 1.6;
+    margin-bottom: var(--spacing-2xl);
+    max-width: 700px;
+}
+
+/* ========================================
+   GRID DE PROFISSIONAIS
+   USA O MESMO LAYOUT DA HOME
+   ======================================== */
+.profissionais-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-2xl);
+}
+
+/* Os cards usam as mesmas classes da home: .servico-card */
+/* Não precisa redefinir estilos, eles já existem no styles.css */
+
+/* ========================================
+   CARD CTA - SEJA UM PROFISSIONAL
+   ======================================== */
+.card-cta {
+    background: linear-gradient(135deg, #0EA5E9 0%, #3B82F6 100%);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-2xl);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 400px;
+    box-shadow: var(--shadow-xl);
+}
+
+.card-cta h3 {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: var(--white);
+    margin-bottom: var(--spacing-sm);
+}
+
+.card-cta p {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+    margin-bottom: var(--spacing-lg);
+}
+
+.btn-cadastrar {
+    background: var(--white);
+    color: var(--primary-color);
+    border: none;
+    padding: 0.875rem 2rem;
+    border-radius: var(--radius-md);
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-cadastrar:hover {
+    background: var(--gray-100);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* ========================================
+   PAGINAÇÃO
+   ======================================== */
+.paginacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-xs);
+    margin-top: var(--spacing-2xl);
+}
+
+.paginacao-btn {
+    min-width: 40px;
+    height: 40px;
+    padding: 0 0.75rem;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--gray-300);
+    background: var(--white);
+    color: var(--gray-700);
+    font-weight: 600;
+    font-size: 0.9375rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.paginacao-btn:hover:not(.active):not(:disabled) {
+    background: var(--gray-100);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.paginacao-btn.active {
+    background: var(--primary-color);
+    color: var(--white);
+    border-color: var(--primary-color);
+}
+
+.paginacao-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.paginacao-dots {
+    color: var(--gray-400);
+    padding: 0 var(--spacing-xs);
+    font-weight: 600;
+}
+
+/* ========================================
+   RESPONSIVO
+   ======================================== */
+@media (max-width: 1024px) {
+    .profissionais-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .search-box-listagem {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .profissionais-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .listagem-title {
+        font-size: 1.875rem;
+    }
+
+    .listagem-subtitle {
+        font-size: 0.9375rem;
+    }
+}

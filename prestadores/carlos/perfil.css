@@ -6,6 +6,7 @@
     padding: var(--spacing-xl) 0;
     background: var(--gray-50);
     min-height: 100vh;
+    background-color: red;
 }
 
 .perfil-layout {
@@ -170,6 +171,7 @@
     border-radius: var(--radius-xl);
     box-shadow: var(--shadow-md);
     margin-bottom: var(--spacing-lg);
+    
 }
 
 .section-box-title {
